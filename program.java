@@ -10,6 +10,9 @@ public class program {
 
         System.out.printf("Voce tem %d anos!", idade);
 
+        if(idade >= 18) {
+            System.out.println("Você é maior de idade, mês que vem tem eleição hein");
+        }
 
         sc.close();
     }
