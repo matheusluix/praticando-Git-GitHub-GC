@@ -1,0 +1,2 @@
+Criando esse arquivo no repositório remoto (GitHub) para futuramente praticar Git Pull
+obs: tinha criado esse arquivo anteriormente mas tiha esquecido de tirar print
