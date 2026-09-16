@@ -16,6 +16,28 @@ void insertion_sort(int arr[], int n) {
     }
 }
 
+void selection_sort(int arr[], int n) {
+    int i, j, menor_idx, temp;
+
+    for (i = 0; i < n - 1; i++) {
+        menor_idx = i;
+
+        // Encontra o índice do menor elemento no restante do array
+        for (j = i + 1; j < n; j++) {
+            if (arr[j] < arr[menor_idx]) {
+                menor_idx = j;
+            }
+        }
+
+        // Troca o menor elemento encontrado com o primeiro da parte não ordenada
+        if (menor_idx != i) {
+            temp = arr[i];
+            arr[i] = arr[menor_idx];
+            arr[menor_idx] = temp;
+        }
+    }
+}
+
 void imprimir(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
